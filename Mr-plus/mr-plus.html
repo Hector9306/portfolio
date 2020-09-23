@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Plus.ico"/>
+    <link rel="stylesheet" href="../materialize.min.css">
+    <title>Mr-plus!</title>
+    <style>
+        body{
+            background-image: url("bg.jpg");
+            background-repeat: repeat;
+            background-size: cover;
+        }
+
+        .colorContainer{
+            background-color:#e91e63;
+        }
+
+        .calculadora{
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .calculadora .btn1{
+            position: absolute;
+            top: 45%;
+            left: 43%;
+            transform: translate(-90%, -99%);
+            background-color: #555;
+            color: white;
+            font-size: 16px;
+            padding: 10px 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .calculadora .btn2{
+            position: absolute;
+            top: 45%;
+            left: 62%;
+            transform: translate(-90%, -99%);
+            background-color: #555;
+            color: white;
+            font-size: 16px;
+            padding: 10px 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .calculadora .btn3{
+            position: absolute;
+            top: 45%;
+            left: 81%;
+            transform: translate(-90%, -99%);
+            background-color: #555;
+            color: white;
+            font-size: 16px;
+            padding: 10px 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .calculadora .btnsigno1{
+            position: absolute;
+            top: 45%;
+            left: 103%;
+            transform: translate(-90%, -99%);
+            background-color: rgb(0, 180, 39);
+            color: white;
+            font-size: 16px;
+            padding: 10px 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .calculadora .btn4{
+            position: absolute;
+            top: 58%;
+            left: 43%;
+            transform: translate(-90%, -99%);
+            background-color: #555;
+            color: white;
+            font-size: 16px;
+            padding: 10px 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .calculadora .btn5{
+            position: absolute;
+            top: 58%;
+            left: 62%;
+            transform: translate(-90%, -99%);
+            background-color: #555;
+            color: white;
+            font-size: 16px;
+            padding: 10px 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .calculadora .btn6{
+            position: absolute;
+            top: 58%;
+            left: 81%;
+            transform: translate(-90%, -99%);
+            background-color: #555;
+            color: white;
+            font-size: 16px;
+            padding: 10px 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .calculadora .btnsigno2{
+            position: absolute;
+            top: 53%;
+            left: 103%;
+            transform: translate(-90%, -99%);
+            background-color: rgb(139, 0, 204);
+            color: white;
+            font-size: 16px;
+            padding: 10px 32px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .calculadora .btn7{
+            position: absolute;
+            top: 71%;
+            left: 43%;
+            transform: translate(-90%, -99%);
+            background-color: #555;
+            color: white;
+            font-size: 16px;
+            padding: 10px 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .calculadora .btn8{
+            position: absolute;
+            top: 71%;
+            left: 62%;
+            transform: translate(-90%, -99%);
+            background-color: #555;
+            color: white;
+            font-size: 16px;
+            padding: 10px 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .calculadora .btn9{
+            position: absolute;
+            top: 71%;
+            left: 81%;
+            transform: translate(-90%, -99%);
+            background-color: #555;
+            color: white;
+            font-size: 16px;
+            padding: 10px 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .calculadora .btnsigno3{
+            position: absolute;
+            top: 61%;
+            left: 103%;
+            transform: translate(-90%, -99%);
+            background-color: rgb(231, 133, 4);
+            color: white;
+            font-size: 16px;
+            padding: 10px 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .calculadora .btnsigno4{
+            position: absolute;
+            top: 69%;
+            left: 103%;
+            transform: translate(-90%, -99%);
+            background-color: rgb(0, 15, 218);
+            color: white;
+            font-size: 16px;
+            padding: 10px 29px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .calculadora .btn0{
+            position: absolute;
+            top: 84%;
+            left: 62%;
+            transform: translate(-90%, -99%);
+            background-color: #555;
+            color: white;
+            font-size: 16px;
+            padding: 10px 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .calculadora .btndecimal{
+            position: absolute;
+            top: 84%;
+            left: 81%;
+            transform: translate(-90%, -99%);
+            background-color: #555;
+            color: white;
+            font-size: 16px;
+            padding: 10px 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .calculadora .btnreset{
+            position: absolute;
+            top: 84%;
+            left: 103%;
+            transform: translate(-90%, -99%);
+            background-color: rgb(209, 5, 5);
+            color: white;
+            font-size: 16px;
+            padding: 10px 17px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .calculadora .btnsigno5{
+            position: absolute;
+            top: 84%;
+            left: 43%;
+            transform: translate(-90%, -99%);
+            background-color: rgb(255, 101, 101);
+            color: white;
+            font-size: 16px;
+            padding: 10px 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .pantalla{
+            position: absolute;
+            bottom: 380px;
+            right: 5px;
+            color: rgb(0, 0, 0);
+            padding-left: 20px;
+            padding-right: 15px;
+
+        }   
+    </style>
+</head>
+
+<body>
+    <div class="card-panel colorContainer center-align">
+        <h4 class="orange-text"> MISTER PLUS! <br> The real calculator simulator</h4>
+    </div>
+    <div class="center-align">
+        <h3 style="font-family: Cursive;"> Please input your operation in the calculator</h3>
+    </div>
+    <div class="row">
+        <div class="col s6 left-align">
+            <div class="calculadora">
+            <img src="calculator.png" alt="">
+            <button id="botonaso1" class="btn1 waves-effect waves-light"  onclick="cifras(1)">1</button>
+            <button id="botonaso2" class="btn2 waves-effect waves-light"  onclick="cifras(2)">2</button>
+            <button id="botonaso3" class="btn3 waves-effect waves-light"  onclick="cifras(3)">3</button>
+            <button id="botonaso+" class="btnsigno1 waves-effect waves-light" onclick="signos('+')">+</button>
+            <button id="botonaso4" class="btn4 waves-effect waves-light"  onclick="cifras(4)">4</button>
+            <button id="botonaso5" class="btn5 waves-effect waves-light"  onclick="cifras(5)">5</button>
+            <button id="botonaso6" class="btn6 waves-effect waves-light"  onclick="cifras(6)">6</button>
+            <button id="botonaso-" class="btnsigno2 waves-effect waves-light" onclick="signos('-')">-</button>
+            <button id="botonaso7" class="btn7 waves-effect waves-light"  onclick="cifras(7)">7</button>
+            <button id="botonaso8" class="btn8 waves-effect waves-light"  onclick="cifras(8)">8</button>
+            <button id="botonaso9" class="btn9 waves-effect waves-light"  onclick="cifras(9)">9</button>
+            <button id="botonaso*" class="btnsigno3 waves-effect waves-light" onclick="signos('*')">X</button>
+            <button id="botonaso/" class="btnsigno4 waves-effect waves-light" onclick="signos('/')">÷</button>
+            <button id="botonaso=" class="btnsigno5 waves-effect waves-light" value="=" onclick="elIgual()">=</button>
+            <button id="botonaso0" class="btn0 waves-effect waves-light" onclick="cifras(0)">0</button>
+            <button id="decimal" class="btndecimal waves-effect waves-light" onclick="cifras('.')">.</button>
+            <button id="reset" class="btnreset waves-effect waves-red" onclick="cifras('RESET')">RESET</button>
+                <div class="pantalla">
+                    <!--alparecer para aplicar CSS en los inputs, deben de ir en un div independiente-->
+                <input  class="black-text text-darken-1" type="text" size="30" id= "screen" style="font-size: 19px; background-color: white; text-align: right; font-family:Impact;" disabled>
+                </div>
+            </div>
+        </div>
+        <div class="col s6 left-align">
+            <br>
+            <br>
+            <br>
+            <br>
+            <img src="mr-plus.png" alt="MR-PLUS!+">
+        </div>
+    </div>
+    <script type="text/javascript" src="operaciones.js"></script>
+</body>
+
+<script src="../materialize.min.js"></script>
+
+</html>     
